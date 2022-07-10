@@ -1,0 +1,22 @@
+#botonera{
+	background-color: $mainColor;
+	font-family: $mainFont;
+	img{
+		width: 125px;
+	}
+	ul li a{
+		font-size: $textMd;
+		color: $white;
+		&:hover{
+			font-weight: $superBold;
+			color: $keyColor;
+		}
+	}
+}
+
+
+
+
+
+
+
