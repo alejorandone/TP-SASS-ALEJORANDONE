@@ -17,10 +17,10 @@
 	@media (min-width: 768px){
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		div{
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 		}
 	}

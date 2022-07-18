@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+// comentario superior
 .comentarioSuperior{
 	font-family: $mainFont;
 	text-align: center;
@@ -11,4 +12,23 @@
 	background-color: $thirdColor;
 	font-size: $textSm;
 	font-weight: $bold;
+}
+
+// Index
+main{
+	margin: 5px 10px;
+}
+
+.contenedor-h1-index{
+		padding: 20px 0;
+		text-align: center;
+		background-color: $secondaryColor;
+		@include tituloPrincipal($textLg, $white);
+}
+
+// formulario contacto
+.contenedorContacto{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }

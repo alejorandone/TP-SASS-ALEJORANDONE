@@ -1,0 +1,23 @@
+.contenedor-h1-productos{
+	@extend .contenedor-h1-index;
+	border-radius: 4px;
+	margin: 20px 10px;
+}
+
+.contenedorFooter{
+	
+}
+
+// mixin
+@mixin tituloPrincipal($tamaño, $color){
+	font-family: $mainFont;
+	font-size: $tamaño;
+	color: $color;
+}
+// maps
+$paleta:(
+	'uno': #967439,
+    'dos': #FFD894,
+    'tres':#E2B66C,
+    'cuatro':#2A5F96,
+    'cinco': #6DA6E3,);

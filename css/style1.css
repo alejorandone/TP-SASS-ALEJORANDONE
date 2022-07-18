@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+.contenedor-h1-productos {
+  border-radius: 4px;
+  margin: 20px 10px; }
+
 #botonera {
   background-color: rgba(150, 116, 57, 0.6);
   font-family: "Open Sans", sans-serif; }
   #botonera img {
-    width: 125px; }
+    width: 90px; }
+    @media (min-width: 768px) {
+      #botonera img {
+        width: 125px; } }
   #botonera ul li a {
     font-size: 1em;
     color: #F5F0F0; }
@@ -26,13 +33,19 @@
 
 main {
   margin: 5px 10px; }
-  main h1 {
-    padding: 20px 0;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    background-color: rgba(109, 166, 227, 0.4);
-    font-size: 2em;
-    color: #F5F0F0; }
+
+.contenedor-h1-index, .contenedor-h1-productos {
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba(109, 166, 227, 0.4);
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  color: #F5F0F0; }
+
+.contenedorContacto {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .contenedorLooks {
   background-color: rgba(205, 204, 206, 0.3);
@@ -45,6 +58,43 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 0.8em;
     font-weight: 400; }
+
+.contenedormujeres {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "botonera" "header" "filtros" "productosmujeres" "footer"; }
+  @media (min-width: 768px) {
+    .contenedormujeres {
+      grid-template-columns: 20vw 80vw;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "botonera botonera" "header header" "filtros productosmujeres" "footer footer"; } }
+
+#botonera {
+  grid-area: botonera; }
+
+#header {
+  grid-area: header; }
+
+#filtros {
+  grid-area: filtros; }
+
+#productosmujeres {
+  grid-area: productosmujeres; }
+
+#footer {
+  grid-area: footer; }
+
+.tabla {
+  background-color: rgba(109, 166, 227, 0.5);
+  color: white;
+  margin: 25px;
+  font-size: 1rem;
+  line-height: 1.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .contenedorFooter {
   background-color: rgba(150, 116, 57, 0.6);
@@ -63,8 +113,8 @@ main {
     .contenedorFooter {
       display: flex;
       align-items: center;
-      justify-content: space-around; }
+      justify-content: space-evenly; }
       .contenedorFooter div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center; } }
