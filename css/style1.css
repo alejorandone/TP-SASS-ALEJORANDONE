@@ -43,9 +43,51 @@ main {
   color: #F5F0F0; }
 
 .contenedorContacto {
-  width: 400px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  text-align: center; }
+  .contenedorContacto .map {
+    width: 250px;
+    height: 300px;
+    text-align: center; }
+  @media (min-width: 992px) {
+    .contenedorContacto {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .contenedorContacto .map {
+        width: 450px;
+        height: 350px; } }
+  @media (min-width: 820px) {
+    .contenedorContacto {
+      text-align: center; }
+      .contenedorContacto .map {
+        width: 650px;
+        height: 450px; } }
+
+.contenedorNosotros {
+  width: 90%;
+  padding: 10px;
+  border: 5px solid rgba(109, 166, 227, 0.3);
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  .contenedorNosotros h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    color: #0F0E0E;
+    font-weight: 400; }
+  .contenedorNosotros h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    color: #0F0E0E;
+    font-weight: 400; }
+  .contenedorNosotros p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 10px; }
 
 .contenedorLooks {
   background-color: rgba(205, 204, 206, 0.3);

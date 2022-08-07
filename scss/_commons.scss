@@ -28,7 +28,53 @@ main{
 
 // formulario contacto
 .contenedorContacto{
-	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
+	.map{
+		width: 250px;
+		height: 300px;
+		text-align: center;
+	}
+
+	@media (min-width: 992px){
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		.map{
+			 width: 450px;
+			 height: 350px;
+		}
+	} 
+	@media (min-width: 820px){
+		text-align: center;
+		.map{
+			 width: 650px;
+			 height: 450px;
+		}
+	} 
+}
+
+.contenedorNosotros{
+	width: 90%;
+  	padding: 10px;
+  	border: 5px solid $thirdColor;
+  	margin: auto;
+  	margin-top: 20px;
+  	display: flex;
+  	flex-direction: column;
+  	h1{
+  		@include tituloPrincipal($textLg, $black)
+  		font-weight: $regular;
+  	}
+  	h2{
+  		@include tituloPrincipal($textLg, $black)
+  		font-weight: $regular;
+  	}
+  	p{
+  		font-family: $secondaryFont;
+  		font-size: $textMd;
+  		font-weight: $light;
+  		line-height: 10px;
+  	}
 }
