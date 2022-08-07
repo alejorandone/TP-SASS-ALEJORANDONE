@@ -93,6 +93,13 @@ main {
     line-height: 28px;
     color: #0F0E0E; }
 
+.botonContacto {
+  background-color: rgba(109, 166, 227, 0.3);
+  border: 2px solid rgba(109, 166, 227, 0.4);
+  padding: 6px;
+  border-radius: 10px;
+  margin: 10px; }
+
 .contenedorLooks {
   background-color: rgba(205, 204, 206, 0.3);
   text-align: center; }
