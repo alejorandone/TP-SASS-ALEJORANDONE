@@ -58,23 +58,27 @@ main{
 .contenedorNosotros{
 	width: 90%;
   	padding: 10px;
-  	border: 5px solid $thirdColor;
+  	border: 5px solid $secondaryColor;
   	margin: auto;
   	margin-top: 20px;
+  	background-color: $thirdColor;
   	display: flex;
   	flex-direction: column;
   	h1{
-  		@include tituloPrincipal($textLg, $black)
+  		@include tituloPrincipal($textLg, $keyColor)
   		font-weight: $regular;
+  		text-decoration: underline;
   	}
   	h2{
-  		@include tituloPrincipal($textLg, $black)
+  		@include tituloPrincipal($textLg, $keyColor)
   		font-weight: $regular;
+  		text-decoration: underline;
   	}
   	p{
   		font-family: $secondaryFont;
   		font-size: $textMd;
   		font-weight: $light;
   		line-height: 28px;
+  		color: $black;
   	}
 }
